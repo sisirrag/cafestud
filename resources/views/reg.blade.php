@@ -82,10 +82,7 @@
                 </table>
                 </form>
             </div>
-            <div class="col">
-                <img class="img-fluid" src="Cafe Stud.png" alt="">
- 
-            </div>
+            
         </div>
 
         

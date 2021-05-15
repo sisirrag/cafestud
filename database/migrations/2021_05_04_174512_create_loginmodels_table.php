@@ -14,7 +14,7 @@ class CreateLoginmodelsTable extends Migration
     public function up()
     {
         Schema::create('loginmodels', function (Blueprint $table) {
-            
+            $table->id();
             $table->string("sid");
             $table->string("name");            
             $table->string("email");
