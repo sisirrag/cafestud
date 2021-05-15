@@ -81,7 +81,7 @@
                         <label class="form-field" for="fee">Fee</label>
                         <input type="text" name="fee" id="w3lName" placeholder="₹" class="contact-input" /> 
                     </div>
-                    <div class="text">
+                    <div >
                         <button class="btn btn-style btn-primary submit">Submit</button>
                     </div>                
                 </div>
