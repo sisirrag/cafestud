@@ -34,9 +34,9 @@ class ucontrol extends Controller
     public function menu()
     {
         $data=['loggeduserinfo'=>loginmodel::where('email','=',session('loggeduser'))->first()];
-        $bf=DB::select('select Day,Breakfast from menumodels');
-        $lu=DB::select('select Day,Lunch from menumodels');
-        $dn=DB::select('select Day,Dinner from menumodels');
+        $bf=DB::select('select menumodels.Day,Breakfast from menumodels');
+        $lu=DB::select('select menumodels.Day,Lunch from menumodels');
+        $dn=DB::select('select menumodels.Day,Dinner from menumodels');
         return view('smenu',$data,['bf'=>$bf,'lu'=>$lu,'dn'=>$dn]);
         
     }

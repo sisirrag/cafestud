@@ -7,10 +7,11 @@
   <h3 class="title-big mt-4">Orders</h3>
   </div>
 </div>
-
+<form action="/calc" method="post">
+            @csrf
 <div class="row mt-4">
   <div class="col">
-  <center>Date: <input type="date" name="date"> <button class="btn btn-secondary">Go</button></center>
+  <center>Date: <input type="date" name="date"> </center>
   </div>
   <br><br>
 </div>
@@ -27,13 +28,12 @@
       @foreach($students as $row)
       
         <tr>            
-        <form action="/calc" method="post">
-            @csrf
+        
             <td>{{$row['sid']}} </td>
             <td>{{$row['name']}}</td>            
-            <td><input class="form-control" name="{{$row['sid']}}" type="text" ></td>  
+            <td><input class="form-control" name="dtotal[{{$row['sid']}}]" type="text" ></td>  
             <td><button type="submit" class="btn btn-success">Add</button></td>
-        </form>
+        
         </tr>
         
       @endforeach
@@ -42,7 +42,7 @@
    
     </div>
   </div>
-  
+  </form>
 </div>
 
 

@@ -229,7 +229,7 @@ class acontrol extends Controller
 
     function orders()
     {
-        
-        return view('aorders');
+        $students=loginmodel::all()->toArray();
+        return view('aorders',compact('students'));
     }
 }
