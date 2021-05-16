@@ -171,8 +171,7 @@
                 <div class="col-lg-7 mt-lg-0 mt-5 ">
                     <div class="row">
                         <div class="col-md-6">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZmyJg0Y7Cwc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h3 class="video-title mt-4">Peaceful Musical Journey</h3>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U-hz9QnikuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            <h3 class="video-title mt-4">Peaceful Musical Journey</h3>
                         </div>
                         <div class="col-md-6 mt-md-0 mt-5">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/RnSdIs1nyOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                                <h3 class="video-title mt-4">Join the Colours</h3>
