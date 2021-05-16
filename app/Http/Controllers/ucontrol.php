@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\loginmodel;
 use App\Models\feemodel;
+use App\Models\menumodel;
 use Validator;
 
 use Illuminate\Support\Facades\URL;
@@ -34,10 +35,10 @@ class ucontrol extends Controller
     public function menu()
     {
         $data=['loggeduserinfo'=>loginmodel::where('email','=',session('loggeduser'))->first()];
-        $bf=DB::select('select menumodels.Day,Breakfast from menumodels');
-        $lu=DB::select('select menumodels.Day,Lunch from menumodels');
-        $dn=DB::select('select menumodels.Day,Dinner from menumodels');
-        return view('smenu',$data,['bf'=>$bf,'lu'=>$lu,'dn'=>$dn]);
+        $bf=DB::table('menumodels')->select('Day','Breakfast')->get();
+        $lu=DB::table('menumodels')->select('Day','Lunch')->get();
+        $dn=DB::table('menumodels')->select('Day','Dinner')->get();
+        return view('smenu',$data,compact('bf','lu','dn'));
         
     }
 
