@@ -4,12 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ucontrol;
 use App\Http\Controllers\acontrol;
 
+Route::post('/menuadd',[acontrol::class,'menuadd']);
+
+
 Route::get('orders',[acontrol::class,'orders']);
 
 Route::get('/chpass',[ucontrol::class,'chpass']);
 Route::get('/profile',[ucontrol::class,'profile']);
 Route::post('afeeedit/afeeupdate',[acontrol::class,'feeupdate']);
 Route::get('afeeedit/{id}',[acontrol::class,'feeedit']);
+Route::get('menudelete/{id}',[acontrol::class,'menudelete']);
 Route::get('/afeedelete/{id}',[acontrol::class,'feedelete']);
 Route::get('/afeeview',[acontrol::class,'feeview']);
 Route::get('/afee',[acontrol::class,'fee']);

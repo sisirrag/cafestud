@@ -124,6 +124,37 @@ class acontrol extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function menuadd()
+    {
+        
+        $day=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']; 
+        $val="Nil";
+               
+        
+
+        for($i=0;$i<7;$i++)
+        {
+            $menu=new menumodel();
+            $menu->Day=$day[$i];
+            $menu->Breakfast=$val;
+            $menu->Lunch=$val;
+            $menu->Dinner=$val;
+            $menu->save();
+
+        }
+
+        
+       return redirect('amenu');
+
+    }
+
+    function menudelete($id)
+    {
+        $delete=DB::table('menumodels')->where('id',$id)->delete();
+        
+        return redirect('amenu');
+    }
+
     public function update(Request $request)
     {
         $request->validate([
@@ -142,6 +173,7 @@ class acontrol extends Controller
 
         
     }
+
     public function feeupdate(Request $request)
     {
         $request->validate([

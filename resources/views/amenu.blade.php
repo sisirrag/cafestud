@@ -9,6 +9,10 @@
 </div>
 <div class="row mt-4">
   <div class="col">
+  <form action="menuadd" method="post">
+            @csrf
+  <button class="btn btn-style btn-primary submit" type="submit">New Menu</button>
+  </form>
   </div>
   <br><br>
 </div>
@@ -22,6 +26,7 @@
         <th>Lunch</th>
         <th>Dinner</th>
         <th></th>
+        <th></th>
       </thead>
       @foreach($items as $row)
         <tr>            
@@ -29,7 +34,9 @@
             <td>{{$row['Breakfast']}}</td>
             <td>{{$row['Lunch']}}</td>
             <td>{{$row['Dinner']}}</td>
-            <td><a href="edit/{{$row['id']}}" class="btn btn-outline-secondary">Edit</a> </td>    
+            <td><a href="edit/{{$row['id']}}" class="btn btn-outline-secondary">Edit</a> </td>  
+            <td><a href="menudelete/{{$row['id']}}" class="btn btn-outline-danger">Delete</a> </td>    
+  
         </tr>
       @endforeach
       
