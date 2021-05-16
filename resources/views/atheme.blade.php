@@ -98,9 +98,9 @@ Author URL: http://w3layouts.com
               <div class="footer-list-29 footer-1">
                   <h6 class="footer-title-29">Contact Us</h6>
                   <ul>
-                      <li><p><span class="fa fa-map-marker"></span> 2005 Stokes Isle Apt. 896, Coffee Cafe Center, Vacaville 10010, USA.</p></li>
-                      <li><a href="tel:+7-800-999-800"><span class="fa fa-phone"></span> +(21)-255-999-8888</a></li>
-                      <li><a href="mailto:coffee@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span> Coffee@mail.com</a></li>
+                      <li><p><span class="fa fa-map-marker"></span> Cafe Stud, South Kalamassery, Kalamassery, Kochi, Kerala 683104</p></li>
+                      <li><a href="tel:+919656065572"><span class="fa fa-phone"></span> +91 9656065572</a></li>
+                      <li><a href="mailto:coffee@mail.com" class="mail"><span class="fa fa-envelope-open-o"></span> cafestud@mail.com</a></li>
                   </ul>
                   <div class="main-social-footer-29">
                       <a href="#facebook" class="facebook"><span class="fa fa-facebook"></span></a>
