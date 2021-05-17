@@ -5,7 +5,7 @@
        <div class="row mt-4">
            <div class="col mt-4">
            <div class="row mt-4">
-           <form action="/login" method="post">
+           <form action="/storereg" method="post">
             {{csrf_field()}}<h3>Register</h3>
            </div>
            <div class="row mt-4"><label class="form-field" for="sid">Student ID</label class="form-field" >

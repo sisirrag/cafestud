@@ -15,7 +15,7 @@ Route::post('afeeedit/afeeupdate',[acontrol::class,'feeupdate']);
 Route::post('/feestore',[acontrol::class,'feestore']);
 
 
-Route::post('/login',[ucontrol::class,'store']);
+Route::post('/storereg',[ucontrol::class,'store']);
 Route::post('/logs',[ucontrol::class,'logs']);  
 Route::post('/passup',[ucontrol::class,'passupdate']);
 
