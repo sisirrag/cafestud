@@ -138,7 +138,7 @@ class ucontrol extends Controller
                         return redirect('/home');
             }
             else{
-                return back()->with('fail','Invalid Login !');
+                return back()->with('fail','Invalid Credentials !');
             }
 
       
