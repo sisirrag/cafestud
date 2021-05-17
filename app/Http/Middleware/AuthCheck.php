@@ -23,7 +23,7 @@ class AuthCheck
         {
             if(session('loggeduser')=='admin')
             {
-                if($request->path()!='ahome' && $request->path()!='amenu' && $request->path()!='astud' && $request->path()!='aitem')
+                if($request->path()!='ahome' && $request->path()!='amenu' && $request->path()!='astud' && $request->path()!='aitem'&& $request->path()!='afee'&& $request->path()!='afeeview'&& $request->path()!='afeedelete/{id}'&& $request->path()!='afeeedit{id}'&& $request->path()!='menudelete/[id}'&& $request->path()!='edit/{sid}'&& $request->path()!='userdelete/{id}'&& $request->path()!='menudelete/[id}')
                 {
                     return back();
                 }
@@ -31,7 +31,7 @@ class AuthCheck
             }
             else
             {
-                if($request->path()!='home' && $request->path()!='menu')
+                if($request->path()!='home' && $request->path()!='menu'&& $request->path()!='sfee'&& $request->path()!='profile'&& $request->path()!='chpass')
                 {
                     return back();
                 }

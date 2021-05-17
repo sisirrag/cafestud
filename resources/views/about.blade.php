@@ -228,7 +228,7 @@
                             <a class="twitter" href="#url">
                                 <span class="fa fa-twitter"></span>
                             </a>
-                            <a class="instagram" href="www.instagram.com/sisirrag">
+                            <a class="instagram" href="{{ url('www.instagram.com/sisirrag') }}">
                                 <span class="fa fa-instagram"></span>
                             </a>
                         </div>

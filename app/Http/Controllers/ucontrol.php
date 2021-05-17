@@ -123,6 +123,7 @@ class ucontrol extends Controller
 
         
             $userinfo=loginmodel::where('email','=',$request->email)->first();
+            $userinfo2 = loginmodel::where([['email',$request->email],['pass',$request->pass]])->first();
            
             if($request->email=='admin@cafe.com' && $request->pass=='cafeadmin')
             {
@@ -130,23 +131,15 @@ class ucontrol extends Controller
                 return redirect('/ahome');
                 
             }
-            else
+            else if($userinfo2)
             {
-                if(!$userinfo)
-                {
-                    return back()->with('fail','Invalid Login !');
-                }
-                else
-                {
-                    if($request->pass==$userinfo->pass)
-                    {
-                        $request->session()->put('loggeduser',$userinfo->email);
+                $request->session()->put('loggeduser',$userinfo->email);
                         $request->session()->put('loggedusersid',$userinfo->sid);
                         return redirect('/home');
-                    }
-                    return back()->with('fail','Invalid Login !');
-                }
-            }      
+            }
+            else{
+                return back()->with('fail','Invalid Login !');
+            }
 
       
 
