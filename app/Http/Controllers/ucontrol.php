@@ -95,7 +95,7 @@ class ucontrol extends Controller
 
         $user->save();
 
-        return view('login');
+        return redirect('/');
         
 
     }
