@@ -5,11 +5,11 @@
        <div class="row mt-4">
        <div class="col "></div>
            <div class="col col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8 mt-4">
-           <div class="row mt-4">
+           <div class="row mt-4 ">
            <form action="/storereg" method="post">
             {{csrf_field()}}<h2>Register</h2>
            </div>
-           <div class="row mt-4"><label class="form-field" for="sid">Student ID</label class="form-field" >
+           <div class="row mt-4 "><label class="form-field" for="sid">Student ID</label class="form-field" >
                             <input type="text" name="sid" class="form-control" placeholder="eg. IS123" value="{{old('sid')}}" >
                             <span class="text-danger">@error('sid'){{$message}} @enderror  </span></div>
            <div class="row mt-4"><label class="form-field" for="name">Full Name</label class="form-field" >
