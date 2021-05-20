@@ -69,7 +69,7 @@ class ucontrol extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'sid' => 'required|unique:App\Models\loginmodel,sid',
+            'sid' => 'required|unique:App\Models\loginmodel,sid|regex:/^IS[0-9]{3}$/i',
             'name' => 'required',
             'email' => 'required|email|unique:App\Models\loginmodel,email',
             'mob' => 'required|digits:10|unique:App\Models\loginmodel,mob',

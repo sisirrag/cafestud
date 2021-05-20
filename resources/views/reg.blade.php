@@ -9,7 +9,7 @@
             {{csrf_field()}}<h3>Register</h3>
            </div>
            <div class="row mt-4"><label class="form-field" for="sid">Student ID</label class="form-field" >
-                            <input type="text" name="sid" class="form-control" placeholder="Student ID" value="{{old('sid')}}" >
+                            <input type="text" name="sid" class="form-control" placeholder="eg. IS123" value="{{old('sid')}}" >
                             <span class="text-danger">@error('sid'){{$message}} @enderror  </span></div>
            <div class="row mt-4"><label class="form-field" for="name">Full Name</label class="form-field" >
                             <input type="text" name="name" class="form-control" placeholder="Name" value="{{old('name')}}">
