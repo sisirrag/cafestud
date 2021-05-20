@@ -3,10 +3,11 @@
 <div class="inner-banner"></div>
    <div class="container">
        <div class="row mt-4">
-           <div class="col mt-4">
+       <div class="col "></div>
+           <div class="col col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8 mt-4">
            <div class="row mt-4">
            <form action="/storereg" method="post">
-            {{csrf_field()}}<h3>Register</h3>
+            {{csrf_field()}}<h2>Register</h2>
            </div>
            <div class="row mt-4"><label class="form-field" for="sid">Student ID</label class="form-field" >
                             <input type="text" name="sid" class="form-control" placeholder="eg. IS123" value="{{old('sid')}}" >
@@ -31,8 +32,12 @@
                             <button class="btn btn-style btn-primary submit" type="submit">Submit</button></div>
 
            </div>
-           <div class="col"></div>
+           
            </form>
+           <div class="col "></div>
        </div>
+       
    </div>
+   
+
 @endsection
