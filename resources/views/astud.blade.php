@@ -19,6 +19,7 @@
         <th>SID</th>
         <th>Name</th>
         <th>Email</th>
+        <th>Phone</th>
         <th></th>        
       </thead>
       @foreach($students as $row)
@@ -26,6 +27,8 @@
             <td>{{$row['sid']}} </td>
             <td>{{$row['name']}}</td>
             <td>{{$row['email']}}</td>
+            <td>{{$row['mob']}}</td>
+
             <td><a href="userdelete/{{$row['sid']}}" class="btn btn-outline-danger">Remove</a></td>
         </tr>
       @endforeach
