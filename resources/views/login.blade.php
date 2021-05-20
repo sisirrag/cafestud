@@ -109,7 +109,7 @@
 				<span class="fa fa-html5"></span>
 			</div>
 			<div class="content-bottom">
-				<form action="#" method="post">
+			
 				@if(count($errors)>0)
             <div class="alert alert-danger">
             <ul>
