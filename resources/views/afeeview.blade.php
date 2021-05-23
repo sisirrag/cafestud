@@ -10,6 +10,7 @@
 </style>
 <div class="container">
 <div class="row mt-4">
+
   <div class="col">
   <h3 class="title-big mt-4">Fee Payment Details</h3>
   <div class="text-right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>

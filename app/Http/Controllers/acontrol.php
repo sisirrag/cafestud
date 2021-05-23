@@ -7,6 +7,9 @@ use App\Models\menumodel;
 use App\Models\feemodel;
 use DB;
 
+use App\Mail\SendMail;
+use Illuminate\Support\Facades\Mail;
+
 class acontrol extends Controller
 {
     /**
@@ -31,6 +34,7 @@ class acontrol extends Controller
         $getfee=request('fee');
         $getstat=request('stat');
         
+        
         $fee=new feemodel();
         $fee->sid=$getsid;
         $fee->month=$getmonth;
@@ -38,15 +42,26 @@ class acontrol extends Controller
         $fee->status=$getstat;
 
         $fee->save();
+        
+        $row=DB::table('loginmodels')->where('sid',$getsid)->first();
+        
 
-        if($fee)
-        {
-            return redirect('/afee')->with('success','Success !');
-        }
-        else
-        {
-            return redirect('/afee');
-        }
+        $fee=array(
+            'sid'=> $getsid,
+            'name'=> $row->name,
+            'email'=> $row->email,
+            'month'=>$getmonth,
+            'fee'=>$getfee,
+            'status' =>$getstat
+        );
+
+        Mail::to($fee['email'])->send(new SendMail($fee));
+
+        
+        return redirect('/afee')->with('success','Success !');
+      
+            
+        
 
 
 
