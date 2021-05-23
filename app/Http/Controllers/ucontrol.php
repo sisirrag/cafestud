@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
+use App\Mail\ForgotPass;
+use Illuminate\Support\Facades\Mail;
 
 class ucontrol extends Controller
 {
@@ -24,6 +26,36 @@ class ucontrol extends Controller
     {
         $data=['loggeduserinfo'=>loginmodel::where('email','=',session('loggeduser'))->first()];
         return view('shome',$data);
+    }
+    public function forgot()
+    {
+        
+        return view('forgot');
+    }
+    public function fpass(Request $request)
+    {
+        $getemail=request('email');
+        $row=DB::table('loginmodels')->where('email',$getemail)->first();
+
+        if($row)
+        {
+            $stud=array(
+            
+                'name'=> $row->name,
+                'email'=> $row->email,
+                'pass'=>$row->pass
+                
+            );
+            Mail::to($stud['email'])->send(new ForgotPass($stud));
+            return back()->with('success','Password will be sent to your email.');
+
+        }
+        else
+        {
+            return back();
+
+        }
+        //return view('forgot');
     }
     
 

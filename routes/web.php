@@ -18,8 +18,10 @@ Route::post('/feestore',[acontrol::class,'feestore']);
 Route::post('/storereg',[ucontrol::class,'store']);
 Route::post('/logs',[ucontrol::class,'logs']);  
 Route::post('/passup',[ucontrol::class,'passupdate']);
+Route::post('/fpass',[ucontrol::class,'fpass']);
 
 Route::get('/logout',[ucontrol::class,'logout']);
+Route::get('/forgot',[ucontrol::class,'forgot']);
 
 Route::post('edit/update',[acontrol::class,'update']);
 Route::get('/edit/{sid}',[acontrol::class,'edit']);

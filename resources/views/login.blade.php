@@ -152,7 +152,7 @@
 							</label>
 						</li>
 						<li>
-							<a href="#" class="text-right">forgot password?</a>
+							<a href="/forgot" class="text-right">forgot password?</a>
 						</li>
 						<li class="clearfix"></li>
 					</ul>
