@@ -1,7 +1,6 @@
 @extends("theme")
 @section("content")
-<div class="inner-banner">
-</div>
+<div class="inner-banner"></div>
 <section class="w3l-breadcrumb">
     <div class="container">
         <ul class="breadcrumbs-custom-path">

@@ -5,6 +5,7 @@
 <div class="row">
   <div class="col">
   <h3 class="title-big mt-4">Student Details</h3>
+  
   </div>
 </div>
 <div class="row mt-4">
@@ -13,7 +14,8 @@
   <br><br>
 </div>
   <div class="row mt-4">
-    <div class="col">
+  <div class="col"></div>
+    <div class="col col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8 mt-4">
     <table class="table table-dark table-hover mt-4">
       <thead>        
         <th>SID</th>
@@ -35,7 +37,9 @@
       
     </table>
     </div>
+    <div class="col"></div>
   </div>
+  
 </div>
 
 @endsection

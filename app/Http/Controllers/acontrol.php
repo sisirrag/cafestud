@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Models\loginmodel;
 use App\Models\menumodel;
@@ -15,9 +14,7 @@ class acontrol extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    
-
-    
+      
     
     public function feestore(Request $request)
     { 
@@ -91,6 +88,7 @@ class acontrol extends Controller
         return view('afeeview',compact('fee'));
 
     }
+    
 
     
     

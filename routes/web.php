@@ -57,3 +57,4 @@ Route::get('/sfee',[ucontrol::class,'fee']);
     
 
 });
+

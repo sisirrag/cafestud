@@ -1,11 +1,18 @@
 @extends("atheme")
 @section("content")
 <div class="inner-banner"></div>
-
+<style type="text/css">
+@media print {
+    #hide {
+        display :  none;
+    }
+}
+</style>
 <div class="container">
 <div class="row mt-4">
   <div class="col">
   <h3 class="title-big mt-4">Fee Payment Details</h3>
+  <div class="text-right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>
   </div>
 </div>
 
@@ -27,8 +34,8 @@
         <td>{{$row['month']}}</td>
         <td>₹{{$row['fee']}}</td>
         <td>{{$row['status']}}</td> 
-        <td><a href="afeeedit/{{$row['id']}}" class="btn btn-outline-success">Update</a></td>
-        <td><a href="/afeedelete/{{$row['id']}}" class="btn btn-outline-danger">Remove</a></td>
+        <td><a id="hide" href="afeeedit/{{$row['id']}}" class="btn btn-outline-success">Update</a></td>
+        <td><a id="hide" href="/afeedelete/{{$row['id']}}" class="btn btn-outline-danger">Remove</a></td>
     </tr>
     @endforeach
 </table>
@@ -36,4 +43,5 @@
         
     </div>
 </div>
+<div id="hide">
 @endsection
