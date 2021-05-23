@@ -23,6 +23,6 @@ class SendMail extends Mailable
     
     public function build()
     {
-        return $this->subject('Fee Payment Status')->view('sendmail');
+        return $this->subject('Cafe Stud: Fee Payment Status')->view('sendmail');
     }
 }

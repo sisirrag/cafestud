@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 use App\Mail\ForgotPass;
+use App\Mail\Register;
 use Illuminate\Support\Facades\Mail;
 
 class ucontrol extends Controller
@@ -126,6 +127,16 @@ class ucontrol extends Controller
         $user->repass=$getrepass;
 
         $user->save();
+
+        $stud=array(
+            
+            'name'=> $getname,
+            'email'=> $getemail
+            
+            
+        );
+
+        Mail::to($stud['email'])->send(new Register($stud));
 
         return redirect('/');
         

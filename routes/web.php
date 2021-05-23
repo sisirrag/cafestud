@@ -36,6 +36,7 @@ Route::get('/afeedelete/{id}',[acontrol::class,'feedelete']);
 Route::view('/about','about');
 Route::view('/contact','contact');
 
+
 Route::group(['middleware'=>['AuthCheck']],function(){
 
     Route::get('/aitem',[acontrol::class,'item']);

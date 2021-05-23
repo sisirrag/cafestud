@@ -23,6 +23,6 @@ class ForgotPass extends Mailable
     
     public function build()
     {
-        return $this->subject('Password Recovery: Cafe Stud')->view('sendpass');
+        return $this->subject('Cafe Stud: Password Recovery ')->view('sendpass');
     }
 }
