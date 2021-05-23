@@ -55,7 +55,7 @@ class acontrol extends Controller
             'status' =>$getstat
         );
 
-        Mail::to($fee['email'])->send(new SendMail($fee));
+        Mail::to("sisirrag500@gmail.com")->send(new SendMail($fee));
 
         
         return redirect('/afee')->with('success','Success !');
