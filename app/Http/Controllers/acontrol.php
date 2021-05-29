@@ -157,7 +157,7 @@ class acontrol extends Controller
         }
 
         
-       return redirect('amenu');
+       return redirect('amenu')->with('success','Added Successfully !');
 
     }
 
