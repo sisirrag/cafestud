@@ -85,9 +85,7 @@
                 <div class="col-lg-6 about-right-faq align-self">
                     <h5 class="title-small mb-3">Our Skills</h5>
                     <h3 class="title-big">We provide the best service you could ever expect.</h3>
-                    <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                        ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Non quae, fugiat consequatur voluptatem nihil ad. Lorem ipsum dolor sit amet</p>
+                    <p class="mt-4">The culinary experience at Cafe' Stud is enhanced by a courteous service and an appealing decor. The menu’s specialties, as combined with a pleasant atmosphere, are sure to satisfy your longing for delectable food enjoyed in the good company of friends.</p>
                     <a href="/about" class="btn btn-style border-btn mt-lg-5 mt-4">Know More</a>
                 </div>
                 <div class="col-lg-6 left-wthree-img text-right mt-lg-0 mt-5 ">

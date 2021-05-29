@@ -15,9 +15,7 @@
             <div class="col-lg-6">
                 <h5 class="title-small mb-3">About Us</h5>
                 <h3 class="title-big">The Student Mess</h3>
-                <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
-                    ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit. Non quae.</p>
+                <p class="mt-4">At the head of the team are the restaurant’s four owners: Victor Afonso, Sébastien Muniz, Marie-Fleur St-Pierre and Pedro Oliveira. The group shares a true love for the flavourful cooking the Iberian peninsula is known for</p>
                 <ul class="rating-star mt-5">
                     <li><span class="fa fa-star"></span></li>
                     <li><span class="fa fa-star"></span></li>
@@ -124,14 +122,14 @@
                             accusantium
                             officia quod quasi necessitatibus perspiciatis Harum error provident
                             quibusdam tenetur.</div>
-                        <div class="name">- Alexander</div>
+                        <div class="name">- George</div>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="slider-info">
                     <div class="img-circle">
-                        <img src="/images/t3.png" class="img-fluid rounded" alt="client image">
+                        <img src="/images/t3.jpg" class="img-fluid rounded" alt="client image">
                     </div>
                     <div class="message-info">
                         <span class="fa fa-quote-left mr-2"></span>
@@ -139,14 +137,14 @@
                             accusantium
                             officia quod quasi necessitatibus perspiciatis Harum error provident
                             quibusdam tenetur.</div>
-                        <div class="name">- Smith roy</div>
+                        <div class="name">- Sisir Rag</div>
                     </div>
                 </div>
             </div>
             <div class="item">
                 <div class="slider-info">
                     <div class="img-circle">
-                        <img src="/images/t4.jpg" class="img-fluid rounded" alt="client image">
+                        <img src="/images/t4.jpeg" class="img-fluid rounded" alt="client image">
                     </div>
                     <div class="message-info">
                         <span class="fa fa-quote-left mr-2"></span>
@@ -154,7 +152,7 @@
                             accusantium
                             officia quod quasi necessitatibus perspiciatis Harum error provident
                             quibusdam tenetur.</div>
-                        <div class="name">- Elizabeth</div>
+                        <div class="name">- Abhishek</div>
                     </div>
                 </div>
             </div>
