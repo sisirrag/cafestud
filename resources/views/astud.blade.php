@@ -15,7 +15,7 @@
 </div>
   <div class="row mt-4">
   <div class="col"></div>
-    <div class="col col-10 col-sm-10 col-md-8 col-lg-8 col-xl-8 mt-4">
+    <div class="col">
     <table class="table table-dark table-hover mt-4" style="display: block;overflow-x: auto;white-space: nowrap;">
       <thead>        
         <th>SID</th>
