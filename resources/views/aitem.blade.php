@@ -50,7 +50,7 @@
               </div>
           </div>
           <div class="col">
-          <table class="table table-dark table-hover mt-4">
+          <table class="table table-dark table-hover mt-4" style="display: block;overflow-x: auto;white-space: nowrap;">
       <thead>
         
         <th>Item No</th>
