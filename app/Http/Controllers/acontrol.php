@@ -165,7 +165,7 @@ class acontrol extends Controller
     {
         $delete=DB::table('menumodels')->where('id',$id)->delete();
         
-        return redirect('amenu');
+        return redirect('amenu')->with('done','Removed Successfully !');
     }
 
     public function update(Request $request)
@@ -223,7 +223,7 @@ class acontrol extends Controller
     {
         $delete=DB::table('loginmodels')->where('sid',$sid)->delete();
         
-        return redirect('ahome');
+        return redirect('ahome')->with('done','Removed Successfully !');
     }
 
     function feeedit($id)
@@ -237,7 +237,7 @@ class acontrol extends Controller
     {
         $delete=DB::table('feemodels')->where('id',$id)->delete();
         
-        return redirect('afeeview');
+        return redirect('afeeview')->with('done','Removed Successfully !');
     }
 
     function orders()

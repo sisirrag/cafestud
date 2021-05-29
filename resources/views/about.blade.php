@@ -102,7 +102,7 @@
             <div class="item">
                 <div class="slider-info">
                     <div class="img-circle">
-                        <img src="/images/t1.jpg" class="img-fluid rounded" alt="client image">
+                        <img src="/images/t1.png" class="img-fluid rounded" alt="client image">
                     </div>
                     <div class="message-info">
                         <span class="fa fa-quote-left mr-2"></span>
@@ -116,7 +116,7 @@
             <div class="item">
                 <div class="slider-info">
                     <div class="img-circle">
-                        <img src="/images/t2.jpg" class="img-fluid rounded" alt="client image">
+                        <img src="/images/t2.png" class="img-fluid rounded" alt="client image">
                     </div>
                     <div class="message-info">
                         <span class="fa fa-quote-left mr-2"></span>
@@ -131,7 +131,7 @@
             <div class="item">
                 <div class="slider-info">
                     <div class="img-circle">
-                        <img src="/images/t3.jpg" class="img-fluid rounded" alt="client image">
+                        <img src="/images/t3.png" class="img-fluid rounded" alt="client image">
                     </div>
                     <div class="message-info">
                         <span class="fa fa-quote-left mr-2"></span>
