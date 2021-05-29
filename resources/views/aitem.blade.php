@@ -26,7 +26,7 @@
                   <option value="Dinner">Dinner</option>
                 </select>&nbsp;
                 <button class="btn btn-outline-light" type="submit" >Add</button> &nbsp;
-                <button class="btn btn-outline-secondary" type="button" onclick="alert('Removed Successfully');">Remove</button>
+                <button class="btn btn-outline-secondary" type="button" >Remove</button>
               </div>
               
             </div>
