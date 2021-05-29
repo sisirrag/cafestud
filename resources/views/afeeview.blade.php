@@ -20,7 +20,7 @@
     <div class="row mt-4">
         
         <div class="col">
-        <table class="table table-dark table-hover ">
+        <table class="table table-dark table-hover " style="display: block;overflow-x: auto;white-space: nowrap;">
     <thead>
         <td>SID</td>   
         <td>Month</td>
