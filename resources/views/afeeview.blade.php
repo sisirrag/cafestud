@@ -18,7 +18,7 @@
 </div>
 
     <div class="row mt-4">
-        
+        <div class="col"></div>
         <div class="col">
         <table class="table table-dark table-hover " style="display: block;overflow-x: auto;white-space: nowrap;">
     <thead>
@@ -41,7 +41,7 @@
     @endforeach
 </table>
         </div>
-        
+        <div class="col"></div>
     </div>
 </div>
 <div id="hide">
