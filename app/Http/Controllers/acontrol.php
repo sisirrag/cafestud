@@ -182,7 +182,7 @@ class acontrol extends Controller
             'Dinner'=>$request->input('Dinner')
         ]);
 
-        return redirect('amenu');
+        return redirect('amenu')->with('success','Updated Successfully !');
 
         
     }
@@ -201,7 +201,7 @@ class acontrol extends Controller
             'status'=>$request->input('stat')
         ]);
 
-        return redirect('afeeview');
+        return redirect('afeeview')->with('success','Updated Successfully !');
 
         
     }

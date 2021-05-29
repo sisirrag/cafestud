@@ -18,11 +18,16 @@
 </div>
   <div class="row mt-4">
     <div class="col">
-    @if(Session::get('done'))
+          @if(Session::get('done'))
             <div class="alert alert-danger">
             {{Session::get('done')}}
             </div>
-            @endif
+          @endif
+          @if(Session::get('success'))
+            <div class="alert alert-success">
+            {{Session::get('success')}}
+            </div>
+        @endif
     <table class="table table-dark table-hover mt-4" style="display: block;overflow-x: auto;white-space: nowrap;">
       <thead>
         

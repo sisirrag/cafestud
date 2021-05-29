@@ -13,11 +13,16 @@
 
   <div class="col">
   <h3 class="title-big mt-4">Fee Payment Details</h3>
-  @if(Session::get('done'))
+        @if(Session::get('done'))
             <div class="alert alert-danger">
             {{Session::get('done')}}
             </div>
-            @endif
+        @endif
+        @if(Session::get('success'))
+            <div class="alert alert-success">
+            {{Session::get('success')}}
+            </div>
+        @endif
   <div class="text-right"><button id="hide" class="btn btn-outline-warning" onclick="window.print()">Print</button></div>
   </div>
 </div>
