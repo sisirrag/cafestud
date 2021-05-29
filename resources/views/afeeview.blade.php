@@ -36,7 +36,7 @@
         <td>₹{{$row['fee']}}</td>
         <td>{{$row['status']}}</td> 
         <td><a id="hide" href="afeeedit/{{$row['id']}}" class="btn btn-outline-success">Update</a></td>
-        <td><a id="hide" href="/afeedelete/{{$row['id']}}" class="btn btn-outline-danger" onclick="alert('Removed Successfully');>Remove</a></td>
+        <td><a id="hide" href="/afeedelete/{{$row['id']}}" class="btn btn-outline-danger" onclick="alert('Removed Successfully');">Remove</a></td>
     </tr>
     @endforeach
 </table>
