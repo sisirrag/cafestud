@@ -66,7 +66,7 @@
 	    <div class="col-sm-4">
 	        <div class="form-group">
 	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
-	            <input type="number" class="form-control" >
+	            <input type="number" class="form-control" value="{{$info->id}}">
 	        </div> <!-- form-group.// -->
 	    </div>
 	</div> <!-- row.// -->
