@@ -6,14 +6,9 @@ use App\Http\Controllers\acontrol;
 
 Route::post('/menuadd',[acontrol::class,'menuadd']);
 
-
-
-
-
 Route::post('afeeedit/afeeupdate',[acontrol::class,'feeupdate']);
 
 Route::post('/feestore',[acontrol::class,'feestore']);
-
 
 Route::post('/storereg',[ucontrol::class,'store']);
 Route::post('/logs',[ucontrol::class,'logs']);  
@@ -31,11 +26,8 @@ Route::get('menudelete/{id}',[acontrol::class,'menudelete']);
 Route::get('afeeedit/{id}',[acontrol::class,'feeedit']);
 Route::get('/afeedelete/{id}',[acontrol::class,'feedelete']);
 
-
-
 Route::view('/about','about');
 Route::view('/contact','contact');
-
 
 Route::group(['middleware'=>['AuthCheck']],function(){
 
@@ -62,5 +54,5 @@ Route::get('/sfee',[ucontrol::class,'fee']);
 });
 
 Route::get('/pay/{id}',[ucontrol::class,'pay']);
-Route::get('/pays',[ucontrol::class,'pays']);
+Route::post('/pays',[ucontrol::class,'pays']);
 

@@ -3,7 +3,7 @@
 
 <head>
 
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
   
 <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
 <meta name="apple-mobile-web-app-title" content="CodePen">
@@ -80,6 +80,8 @@ body { margin:50px auto; width:600px;}
 </head>
 
 <body translate="no" style="background-color:#cfcfcf">
+<form action="pays" method="post">
+            @csrf
   <div class="container">
 <div class="row">
 <div  class="col col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
@@ -151,8 +153,7 @@ required
 </div>
 <div class="row">
 <div class="col-xs-12">
-<form action="pays" method="post">
-            @csrf
+
 <input type="text" name="id"  value="{{$info->id}}"/>
 <center><a class="btn btn-success" type="submit"> PAY   </a> </center>
 </form>
@@ -163,12 +164,13 @@ required
 <p class="payment-errors"></p>
 </div>
 </div>
-</form>
+
 <div  class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 </div>
 </div>
 </div>            
 <!-- CREDIT CARD FORM ENDS HERE -->
+</form>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>       
 </body>
 </html>
