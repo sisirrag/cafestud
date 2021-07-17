@@ -37,6 +37,7 @@
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
 		<input type="text" class="form-control" name="username" placeholder="" required="">
+        <input type="hidden" name="id"  value="{{$info->id}}"/>
 	</div> <!-- form-group.// -->
 
 	<div class="form-group">
