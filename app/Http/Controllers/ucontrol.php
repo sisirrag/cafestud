@@ -45,7 +45,7 @@ class ucontrol extends Controller
             'sid'=>$request->input('sid'),
             'month'=>$request->input('month'),
             'fee'=>$request->input('fee'),
-            'status'=>$request->input('stat')
+            'status'=>"Paid"
         ]);
 
         return view('paysuccess');
