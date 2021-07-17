@@ -42,7 +42,7 @@
         <input type="hidden" name="sid"  value="{{$info->sid}}"/>
         <input type="hidden" name="month"  value="{{$info->month}}"/>
         <input type="hidden" name="fee"  value="{{$info->fee}}"/>
-        <input type="hidden" name="stat"  value="{{$info->stat}}"/>
+        <input type="hidden" name="stat"  value="{{$info->status}}"/>
         
 	</div> <!-- form-group.// -->
 
