@@ -33,7 +33,7 @@
 <div class="tab-content">
 <div class="tab-pane fade show active" id="nav-tab-card">
 	<p class="alert alert-success">Some text success or error</p>
-	<form role="form">
+	<form role="form" action="pays" method="post">
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
 		<input type="text" class="form-control" name="username" placeholder="" required="">
@@ -69,7 +69,7 @@
 	        </div> <!-- form-group.// -->
 	    </div>
 	</div> <!-- row.// -->
-	<button class="subscribe btn btn-primary btn-block" type="button"> Confirm  </button>
+	<button class="subscribe btn btn-primary btn-block" type="submit"> Confirm  </button>
 	</form>
 </div> <!-- tab-pane.// -->
 <div class="tab-pane fade" id="nav-tab-paypal">
