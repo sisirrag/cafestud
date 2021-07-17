@@ -32,7 +32,7 @@
 
 <div class="tab-content">
 <div class="tab-pane fade show active" id="nav-tab-card">
-	<p class="alert alert-success">Some text success or error</p>
+	<p class="alert alert-success">{{$info->fee}}</p>
 	<form role="form" action="pays" method="post">
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
@@ -66,7 +66,7 @@
 	    <div class="col-sm-4">
 	        <div class="form-group">
 	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
-	            <input type="number" class="form-control" value="{{$info->id}}">
+	            <input type="number" class="form-control" value="">
 	        </div> <!-- form-group.// -->
 	    </div>
 	</div> <!-- row.// -->
