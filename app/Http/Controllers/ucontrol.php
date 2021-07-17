@@ -41,7 +41,7 @@ class ucontrol extends Controller
     }
     public function pays(Request $request)
     {       
-        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
+        // $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
         return redirect('paysuccess');
         
     }
