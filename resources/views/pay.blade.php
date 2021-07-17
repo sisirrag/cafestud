@@ -7,7 +7,7 @@
 
 
 <div class="container">
-<br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com</a></p>
+<br>  </p>
 <hr>
 
 <div class="row">
