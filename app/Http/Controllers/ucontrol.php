@@ -29,14 +29,16 @@ class ucontrol extends Controller
         return view('shome',$data);
     }
     public function forgot()
-    {
-        
+    {        
         return view('forgot');
     }
     public function pay()
-    {
-        
+    {        
         return view('pay');
+    }
+    public function pays()
+    {        
+        return view('paysuccess');
     }
     public function fpass(Request $request)
     {
