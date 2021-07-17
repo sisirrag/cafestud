@@ -151,7 +151,11 @@ required
 </div>
 <div class="row">
 <div class="col-xs-12">
-<center><a class="btn btn-success" type="submit" href="/myorders"  > PAY   </a> </center>
+<form action="afeeupdate" method="post">
+            @csrf
+            
+<center><button class="btn btn-success" type="submit"></button> </center>
+</form>
 </div>
 </div>
 <div class="row" style="display:none;">
