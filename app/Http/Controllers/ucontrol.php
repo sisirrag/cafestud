@@ -41,8 +41,16 @@ class ucontrol extends Controller
     }
     public function pays(Request $request)
     {       
-        // $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
-        return redirect('paysuccess');
+        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
+        if($updating)
+        {
+            return redirect('paysuccess');
+        }
+        else
+        {
+            echo "Error";
+        }
+        
         
     }
     public function fpass(Request $request)
