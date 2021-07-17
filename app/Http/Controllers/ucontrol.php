@@ -33,6 +33,11 @@ class ucontrol extends Controller
         
         return view('forgot');
     }
+    public function pay()
+    {
+        
+        return view('pay');
+    }
     public function fpass(Request $request)
     {
         $getemail=request('email');
