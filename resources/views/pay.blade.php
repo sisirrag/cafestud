@@ -96,7 +96,7 @@ on <= small devices and 4/12 page width on >= medium devices -->
 <div class="row display-tr" >
 <h3 class="panel-title display-td" >Payment Details</h3>
 <div class="display-td" >                            
-<img src="images/card.jpg" width="25" height="20" class="img-responsive" />
+<img src="images/about.jpg" width="25" height="20" class="img-responsive" />
 </div>
 </div>                    
 </div>
