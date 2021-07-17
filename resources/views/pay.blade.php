@@ -107,7 +107,7 @@ on <= small devices and 4/12 page width on >= medium devices -->
 <div class="form-group">
 <label for="cardNumber">CARD NUMBER</label>
 <div class="input-group">
-<input type="text" class="form-control" name="cardNumber" placeholder="Valid Card Number"  required>
+<input type="text" class="form-control" name="cardNumber" placeholder="Valid Card Number"  >
 <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
 </div>
 </div>                            
@@ -145,7 +145,7 @@ required
 <div class="col-xs-12">
 <div class="form-group">
 <label for="couponCode">OTP</label>
-<input type="text" class="form-control" name="couponCode" required>
+<input type="text" class="form-control" name="couponCode">
 </div>
 </div>                        
 </div>
