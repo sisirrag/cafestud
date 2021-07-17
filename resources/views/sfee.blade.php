@@ -81,8 +81,9 @@
                                         <h6>{{ $row->status}}</h6>
                                     </div>
                                 </div>
-                                <div class="menu-item-description text-right">
-                                    <p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;<a class="btn btn-style btn-white btn-small text-right" href="/">Pay Now</a></p>
+                                <div class="menu-item-description">
+                                <div class="col text-left"><p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;</p></div>
+                                <div class="col text-right"><a class="btn btn-style btn-white btn-small" href="/">Pay Now</a></div>                                    
                                 </div>
                                 <div class="menu-item-description">
                                     <p></p>
