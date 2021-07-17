@@ -56,6 +56,7 @@
                                 <div class="menu-item-description">
                                     <p>Amount: Rs.{{ $row->fee }}</p>
                                 </div>
+                                
                             </div>
                         </div> 
                         @endforeach
@@ -82,6 +83,9 @@
                                 </div>
                                 <div class="menu-item-description">
                                     <p>Amount: Rs.{{ $row->fee }}</p>
+                                </div>
+                                <div class="menu-item-description">
+                                    <p>Pay Now</p>
                                 </div>
                             </div>
                         </div> 
