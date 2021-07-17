@@ -81,7 +81,7 @@
                                         <h6>{{ $row->status}}</h6>
                                     </div>
                                 </div>
-                                <div class="menu-item-description">
+                                <div class="menu-item-description text-right">
                                     <p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;<a class="btn btn-style btn-white btn-small text-right" href="/">Pay Now</a></p>
                                 </div>
                                 <div class="menu-item-description">
