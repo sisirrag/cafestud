@@ -33,7 +33,7 @@
 <div class="tab-content">
 <div class="tab-pane fade show active" id="nav-tab-card">
 	<p class="alert alert-success">{{$info->fee}}</p>
-	<form role="form" action="/pays" method="post">
+	<form role="form" action="pays" method="post">
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
 		<input type="text" class="form-control" name="username" placeholder="" >
