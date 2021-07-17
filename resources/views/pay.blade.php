@@ -123,7 +123,7 @@ class="form-control"
 name="cardExpiry"
 placeholder="MM / YY"
 autocomplete="cc-exp"
-required 
+
 >
 </div>
 </div>
@@ -136,7 +136,7 @@ class="form-control"
 name="cardCVC"
 placeholder="CVC"
 autocomplete="cc-csc"
-required
+
 >
 </div>
 </div>
