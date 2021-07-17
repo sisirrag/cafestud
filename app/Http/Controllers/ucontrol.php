@@ -161,6 +161,12 @@ class ucontrol extends Controller
 
     }
 
+    public function feeupdate(Request $request)
+    {
+        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
+        return redirect('paysuccess');        
+    }
+
    
     public function logs(Request $request)
     {
