@@ -39,9 +39,11 @@ class ucontrol extends Controller
         return view('pay',$data);   
         
     }
-    public function pays()
-    {        
-        return view('paysuccess');
+    public function pays(Request $request)
+    {       
+        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
+        return redirect('paysuccess');
+        
     }
     public function fpass(Request $request)
     {
@@ -164,11 +166,7 @@ class ucontrol extends Controller
 
     }
 
-    public function feeupdate(Request $request)
-    {
-        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update(['status'=>"Paid"]);
-        return redirect('paysuccess');        
-    }
+    
 
    
     public function logs(Request $request)
