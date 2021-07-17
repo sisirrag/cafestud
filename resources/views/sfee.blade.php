@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="menu-item-description">
-                                    <p>Amount: Rs.{{ $row->fee }}<a class="btn btn-style btn-white mt-sm-5 mt-4" href="/">Pay Now</a></p>
+                                    <p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;<a class="btn btn-style btn-white " href="/">Pay Now</a></p>
                                 </div>
                                 <div class="menu-item-description">
                                     <p></p>
