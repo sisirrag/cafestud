@@ -82,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="menu-item-description">
-                                    <p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;<div class="text-right"><a class="btn btn-style btn-white" href="/pay">Pay Now</a></div></p>
+                                    <p>Amount: Rs.{{ $row->fee }}&nbsp;&nbsp;<div class="text-right"><a class="btn btn-style btn-white" href="/pay/{{$row->id}}">Pay Now</a></div></p>
                                 </div>
                                 <div class="menu-item-description">
                                     <p><input type="hidden" name="id"  value="{{$row->id}}"/></p>

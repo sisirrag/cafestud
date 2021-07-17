@@ -151,6 +151,7 @@ required
 </div>
 <div class="row">
 <div class="col-xs-12">
+<input type="hidden" name="id"  value="{{$info->id}}"/>
 <center><a class="btn btn-success" type="submit" href="/pays"  > PAY   </a> </center>
 </div>
 </div>

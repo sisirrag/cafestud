@@ -59,12 +59,6 @@ class acontrol extends Controller
 
         
         return redirect('/afee')->with('success','Success !');
-      
-            
-        
-
-
-
 
 
         

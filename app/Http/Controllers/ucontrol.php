@@ -32,9 +32,12 @@ class ucontrol extends Controller
     {        
         return view('forgot');
     }
-    public function pay()
-    {        
-        return view('pay');
+    public function pay($id)
+    {  
+        $row=DB::table('feemodels')->where('id',$id)->first();
+        $data=['info'=>$row];
+        return view('pay',$data);   
+        
     }
     public function pays()
     {        
