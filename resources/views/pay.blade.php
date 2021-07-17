@@ -154,7 +154,6 @@ required
 <div class="row">
 <div class="col-xs-12">
 
-<input type="text" name="id"  value="{{$info->id}}"/>
 <center><a class="btn btn-success" type="submit"> PAY   </a> </center>
 </form>
 </div>
@@ -166,6 +165,7 @@ required
 </div>
 
 <div  class="col col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+<input type="hidden" name="id"  value="{{$info->id}}"></input>
 </div>
 </div>
 </div>            
