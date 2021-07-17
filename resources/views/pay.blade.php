@@ -153,7 +153,7 @@ required
 <div class="col-xs-12">
 <form action="pays" method="post">
             @csrf
-<input type="hidden" name="id"  value="{{$info->id}}"/>
+<input type="text" name="id"  value="{{$info->id}}"/>
 <center><a class="btn btn-success" type="submit"> PAY   </a> </center>
 </form>
 </div>
