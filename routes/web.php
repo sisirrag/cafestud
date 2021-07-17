@@ -62,5 +62,5 @@ Route::get('/sfee',[ucontrol::class,'fee']);
 });
 
 Route::get('/pay/{id}',[ucontrol::class,'pay']);
-Route::get('/pays',[ucontrol::class,'pays']);
+Route::post('pay/pays',[ucontrol::class,'pays']);
 

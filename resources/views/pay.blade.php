@@ -151,8 +151,11 @@ required
 </div>
 <div class="row">
 <div class="col-xs-12">
+<form action="pays" method="post">
+            @csrf
 <input type="hidden" name="id"  value="{{$info->id}}"/>
-<center><a class="btn btn-success" type="submit" href="/pays"  > PAY   </a> </center>
+<center><a class="btn btn-success" type="submit"> PAY   </a> </center>
+</form>
 </div>
 </div>
 <div class="row" style="display:none;">
