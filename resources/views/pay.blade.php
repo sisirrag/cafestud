@@ -36,7 +36,7 @@
 	<form role="form" action="pays" method="post">
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
-		<input type="text" class="form-control" name="username" placeholder="" required="">
+		<input type="text" class="form-control" name="username" placeholder="" >
         <input type="hidden" name="id"  value="{{$info->id}}"/>
 	</div> <!-- form-group.// -->
 
@@ -66,7 +66,7 @@
 	    <div class="col-sm-4">
 	        <div class="form-group">
 	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">CVV <i class="fa fa-question-circle"></i></label>
-	            <input type="number" class="form-control" required="">
+	            <input type="number" class="form-control" >
 	        </div> <!-- form-group.// -->
 	    </div>
 	</div> <!-- row.// -->
