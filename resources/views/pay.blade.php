@@ -34,10 +34,16 @@
 <div class="tab-pane fade show active" id="nav-tab-card">
 	<p class="alert alert-success">{{$info->fee}}</p>
 	<form role="form" action="pays" method="post">
+    @csrf
 	<div class="form-group">
 		<label for="username">Full name (on the card)</label>
 		<input type="text" class="form-control" name="username" placeholder="" >
         <input type="hidden" name="id"  value="{{$info->id}}"/>
+        <input type="hidden" name="sid"  value="{{$info->sid}}"/>
+        <input type="hidden" name="month"  value="{{$info->month}}"/>
+        <input type="hidden" name="fee"  value="{{$info->fee}}"/>
+        <input type="hidden" name="stat"  value="{{$info->stat}}"/>
+        
 	</div> <!-- form-group.// -->
 
 	<div class="form-group">

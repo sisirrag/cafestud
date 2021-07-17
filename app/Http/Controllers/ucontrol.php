@@ -41,7 +41,14 @@ class ucontrol extends Controller
     }
     public function pays(Request $request)
     {       
-        echo"failed";     
+        $updating=DB::table('feemodels')->where('id',$request->input('id'))->update([
+            'sid'=>$request->input('sid'),
+            'month'=>$request->input('month'),
+            'fee'=>$request->input('fee'),
+            'status'=>$request->input('stat')
+        ]);
+
+        return view('paysuccess');
         
     }
     public function fpass(Request $request)
