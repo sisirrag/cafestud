@@ -49,7 +49,7 @@
 	<div class="form-group">
 		<label for="cardNumber">Card number</label>
 		<div class="input-group">
-			<input type="text" class="form-control" name="cardNumber" placeholder="">
+			<input type="text" class="form-control" name="cardNumber" placeholder="" required>
 			<div class="input-group-append">
 				<span class="input-group-text text-muted">
 					<i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   

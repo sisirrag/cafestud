@@ -86,7 +86,7 @@
             </div>
             <div class="content">
                <h1>Payment Success !</h1>
-               <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. </p>
+               <p>Your payment has been received successfully. </p>
                <a href="/sfee">Go to Home</a>
             </div>
             
